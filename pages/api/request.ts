@@ -16,7 +16,7 @@ const mirrorworld = new MirrorWorld({
   // devnet and mainnet
   //  @ts-ignore
   apiKey: userConfig.xApiKey,
-  env: userConfig.network === 'mainnet'  ? ClusterEnvironment.mainnet : ClusterEnvironment.testnet , // Can be ClusterEnvionment.mainnet for mainnet
+  env: userConfig.network === 'testnet'  ? ClusterEnvironment.mainnet : ClusterEnvironment.testnet , // Can be ClusterEnvionment.mainnet for mainnet
   staging: !ifProduct
 })
 
